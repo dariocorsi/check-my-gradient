@@ -17,7 +17,6 @@ function App(props){
     newColors[key] = value;
     setColors(newColors);  
     document.documentElement.style.setProperty(`--color-${key}`, value);
-
   }
 
   return(
@@ -30,14 +29,14 @@ function App(props){
           />
         <ColorInput 
           updateColors={updateColors} 
-          color={colors.end}
-          name="end"
-          />
-        <ColorInput 
-          updateColors={updateColors} 
           color={colors.text}
           name="text"
-          />          
+          />            
+        <ColorInput 
+          updateColors={updateColors} 
+          color={colors.end}
+          name="end"
+          />        
         <ButtonPreview 
           text={colors.text}
           start={colors.start}

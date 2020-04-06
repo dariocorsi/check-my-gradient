@@ -27,12 +27,12 @@ function App(props) {
     name: "start"
   }), /*#__PURE__*/React.createElement(ColorInput, {
     updateColors: updateColors,
-    color: colors.end,
-    name: "end"
-  }), /*#__PURE__*/React.createElement(ColorInput, {
-    updateColors: updateColors,
     color: colors.text,
     name: "text"
+  }), /*#__PURE__*/React.createElement(ColorInput, {
+    updateColors: updateColors,
+    color: colors.end,
+    name: "end"
   }), /*#__PURE__*/React.createElement(ButtonPreview, {
     text: colors.text,
     start: colors.start,
